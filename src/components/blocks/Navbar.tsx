@@ -1,24 +1,26 @@
-"use client"
+"use client";
+import { useState, useEffect } from "react";
 
-import { useState, useEffect } from "react"
+const MenuIcon = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>;
+const XIcon = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>;
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Pipeline", href: "#pipeline" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "Partners", href: "#partners" },
   { label: "News", href: "#news" },
   { label: "Contact", href: "#contact" },
-]
+];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50)
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <nav
@@ -41,6 +43,9 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <span className="text-gold/50 text-[10px] uppercase tracking-[0.25em] font-medium border-l border-foreground/10 pl-8">
+            A New Chapter for Finland
+          </span>
         </div>
 
         <button
@@ -48,18 +53,7 @@ export default function Navbar() {
           className="md:hidden text-foreground p-2 active:scale-95 transition-transform"
           aria-label="Toggle menu"
         >
-          {open ? (
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          )}
+          {open ? <XIcon /> : <MenuIcon />}
         </button>
       </div>
 
@@ -76,9 +70,12 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <span className="text-gold/50 text-[10px] uppercase tracking-[0.25em] font-medium pt-2 border-t border-foreground/10">
+              A New Chapter for Finland
+            </span>
           </div>
         </div>
       )}
     </nav>
-  )
+  );
 }

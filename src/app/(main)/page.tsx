@@ -8,6 +8,7 @@ import VideoSection from "components/blocks/VideoSection"
 import VisionSection from "components/blocks/VisionSection"
 import PartnersSection from "components/blocks/PartnersSection"
 import NewsSection from "components/blocks/NewsSection"
+import ContactSection from "components/blocks/ContactSection"
 import Footer from "components/blocks/Footer"
 
 export default function Page() {
@@ -23,6 +24,7 @@ export default function Page() {
       <PipelineSection />
       <VideoSection />
       <NewsSection />
+      <ContactSection />
       <Footer />
     </div>
   )

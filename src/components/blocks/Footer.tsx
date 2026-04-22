@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <span className="text-gold font-display text-2xl tracking-tight block mb-4">RAIDE</span>
             <p className="text-dim text-sm leading-relaxed max-w-xs">
-              Radical AI Deployment Ecosystem — accelerating AI adoption
+              Radical AI Deployment Ecosystem — accelerating AI adoption 
               across Finnish industry and public services.
             </p>
           </div>
@@ -16,7 +16,7 @@ export default function Footer() {
               Navigate
             </h4>
             <ul className="space-y-3">
-              {["About", "Pipeline", "Partners", "News"].map((link) => (
+              {["About", "Portfolio", "Partners", "News"].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -34,7 +34,7 @@ export default function Footer() {
               Get in Touch
             </h4>
             <p className="text-dim text-sm leading-relaxed mb-5">
-              Interested in joining the ecosystem? Reach out to learn about
+              Interested in joining the ecosystem? Reach out to learn about 
               membership and collaboration.
             </p>
             <a
@@ -56,5 +56,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
