@@ -1,5 +1,5 @@
-import Image from "next/image"
-import RaideLogo from "components/blocks/RaideLogo"
+import Image from "next/image";
+import RaideLogo from "components/blocks/RaideLogo";
 
 export default function HeroSection() {
   return (
@@ -38,7 +38,7 @@ export default function HeroSection() {
           style={{ animationDelay: "2400ms", animationFillMode: "forwards" }}
         >
           Finland's enterprise-driven ecosystem turning AI into real-world
-          products, services, and competitive advantage.
+          products, services, and competitive advantage initiated by Demola Global and Business Finland.
         </p>
 
         {/* CTA */}
@@ -81,5 +81,5 @@ export default function HeroSection() {
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
-  )
+  );
 }

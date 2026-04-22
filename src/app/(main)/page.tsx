@@ -1,6 +1,5 @@
 import Navbar from "components/blocks/Navbar"
 import HeroSection from "components/blocks/HeroSection"
-import StatsSection from "components/blocks/StatsSection"
 import MissionSection from "components/blocks/MissionSection"
 import PillarsSection from "components/blocks/PillarsSection"
 import PipelineSection from "components/blocks/PipelineSection"
@@ -18,7 +17,6 @@ export default function Page() {
       <HeroSection />
       <VisionSection />
       <MissionSection />
-      <StatsSection />
       <PartnersSection />
       <PillarsSection />
       <PipelineSection />
