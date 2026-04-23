@@ -25,8 +25,7 @@ export default function HeroSection() {
           className="text-foreground text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-12 md:mb-16 opacity-0 animate-title-reveal text-balance"
           style={{ animationDelay: "200ms", animationFillMode: "forwards" }}
         >
-          The Age of{" "}
-          <span className="text-gold gold-glow italic">Deployment</span>
+          The Age of <span className="text-gold gold-glow italic">Radical & Disruptive Thinking</span>
         </h1>
 
         {/* Logo — the centerpiece */}

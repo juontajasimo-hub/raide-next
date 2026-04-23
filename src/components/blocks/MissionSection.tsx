@@ -10,10 +10,10 @@ export default function MissionSection() {
     <section id="about" className="py-32 md:py-40 relative">
       <div className="container mx-auto px-6">
         <p className="font-display italic text-2xl md:text-3xl text-foreground/70 max-w-2xl mb-20 leading-snug text-pretty">
-          AI exponentially increases and speeds up the amount of low value outputs while deeper insights are left in the shadows.
+          AI exponentially increases and speeds up the amount of <span className="text-gold font-bold">low value outputs</span> while <span className="text-gold font-bold">deeper insights are left in the shadows</span>.
         </p>
         <p className="font-display italic text-2xl md:text-3xl text-foreground/70 max-w-2xl mb-20 leading-snug text-pretty">
-          We focus on achieving deep understanding and scaling solutions and services to real life needs.
+          We focus on achieving <span className="text-gold font-bold">deep understanding</span> and <span className="text-gold font-bold">scaling solutions and services to real life needs</span>.
         </p>
         {/* Section title */}
         <div ref={refTitle} className="cin-reveal mb-20">

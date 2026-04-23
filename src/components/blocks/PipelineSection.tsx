@@ -5,16 +5,16 @@ const steps = [
   {
     num: "01",
     title: "IDENTIFY",
-    desc: "Strategic use cases surfaced from member organisations. Real problems, real stakes, real urgency.",
+    desc: "Strategic opportunities and identified problems surfaced from member organisations. Real problems, real stakes, real urgency.",
   },
   {
     num: "02",
-    title: "EXPERIMENT",
-    desc: "Rapid prototyping on the Demola platform — multidisciplinary teams, thesis projects, startup pilots. Speed is the point.",
+    title: "UNDERSTAND",
+    desc: "Rapid prototyping on the Demola platform and intense cross-industry co-creation. Multidisciplinary teams, thesis projects, start up pilots. What matters is deep understanding.",
   },
   {
     num: "03",
-    title: "LEARN & SHARE",
+    title: "INTERPRETATION AND NEW IPR CREATION",
     desc: "Results, data, and insights flow across the ecosystem. Feeding R&D portfolios, joint projects, new ventures.",
   },
   {
@@ -38,7 +38,7 @@ export default function PipelineSection() {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground text-balance">
-            From challenge to deployment
+            From identified problems and opportunities to real life solutions
           </h2>
         </div>
 

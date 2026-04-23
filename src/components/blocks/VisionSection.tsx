@@ -1,5 +1,4 @@
 "use client";
-"use client"
 
 import { useScrollReveal } from "hooks/useScrollReveal"
 
@@ -15,7 +14,7 @@ export default function VisionSection() {
           Vision 2030
         </span>
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foreground max-w-4xl mx-auto text-balance leading-[0.95] italic">
-          Making Finland a global model for AI deployment
+          We help Finland become a global leader for AI applications
         </h2>
         <p className="text-dim text-lg md:text-xl max-w-2xl mx-auto mt-10 leading-relaxed text-pretty font-light">
           Not through optimization, but through products shipped,
