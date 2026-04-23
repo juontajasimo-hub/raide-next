@@ -10,23 +10,23 @@
   --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "Playfair Display", Georgia, serif;
 
-  /* shadcn-style HSL CSS variables mapped as Tailwind colors */
-  --color-background: hsl(220 15% 6%);
-  --color-foreground: hsl(40 10% 92%);
-  --color-card: hsl(220 12% 10%);
-  --color-card-foreground: hsl(40 10% 92%);
-  --color-primary: hsl(40 10% 92%);
-  --color-primary-foreground: hsl(220 15% 6%);
-  --color-secondary: hsl(220 10% 14%);
-  --color-secondary-foreground: hsl(40 10% 85%);
-  --color-muted: hsl(220 10% 14%);
-  --color-muted-foreground: hsl(220 8% 50%);
-  --color-accent: hsl(40 85% 58%);
-  --color-accent-foreground: hsl(220 15% 6%);
+  /* Demola-inspired light palette */
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(240 10% 8%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(240 10% 8%);
+  --color-primary: hsl(240 10% 8%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(240 5% 96%);
+  --color-secondary-foreground: hsl(240 10% 8%);
+  --color-muted: hsl(240 5% 96%);
+  --color-muted-foreground: hsl(240 5% 40%);
+  --color-accent: hsl(308 88% 44%);
+  --color-accent-foreground: hsl(0 0% 100%);
   --color-destructive: hsl(0 84% 60%);
-  --color-border: hsl(220 10% 16%);
-  --color-input: hsl(220 10% 16%);
-  --color-ring: hsl(40 85% 58%);
+  --color-border: hsl(240 6% 90%);
+  --color-input: hsl(240 6% 90%);
+  --color-ring: hsl(308 88% 44%);
 
   --radius-lg: 0.375rem;
   --radius-md: calc(0.375rem - 2px);
@@ -100,10 +100,10 @@
   }
 
   h1 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-weight: 800;
-    line-height: 0.95;
-    letter-spacing: -0.01em;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
   }
 
   h2 {
@@ -131,35 +131,35 @@
   }
 
   .text-gold {
-    color: hsl(40 85% 58%);
+    color: hsl(308 88% 44%);
   }
 
   .bg-dark-surface {
-    background-color: hsl(220 12% 10%);
+    background-color: hsl(0 0% 100%);
   }
 
   .bg-dark-surface-2 {
-    background-color: hsl(220 10% 14%);
+    background-color: hsl(240 5% 97%);
   }
 
   .text-dim {
-    color: hsl(220 8% 45%);
+    color: hsl(240 5% 40%);
   }
 
   .text-bright {
-    color: hsl(40 10% 95%);
+    color: hsl(240 10% 8%);
   }
 
   .border-divider {
-    border-color: hsl(40 30% 20%);
+    border-color: hsl(240 6% 88%);
   }
 
   .gold-glow {
-    text-shadow: 0 0 40px hsla(40, 85%, 58%, 0.3);
+    text-shadow: none;
   }
 
   .gold-line {
-    background: linear-gradient(90deg, transparent, hsl(40 85% 58%), transparent);
+    background: linear-gradient(90deg, transparent, hsl(308 88% 44%), transparent);
   }
 
   /* Cinematic scroll reveals */
