@@ -1,18 +1,20 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-border">
-      <div className="container mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-3 gap-16">
+    <footer className="border-t border-border bg-secondary/30">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <span className="text-gold font-display text-2xl tracking-tight block mb-4">RAIDE</span>
-            <p className="text-dim text-sm leading-relaxed max-w-xs">
-              Radical AI Deployment Ecosystem — accelerating AI adoption 
-              across Finnish industry and public services.
+            <Image src="/raide-next/demola-logo.png" alt="Demola" width={120} height={36} className="h-8 w-auto mb-4" />
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
+              <span className="text-foreground font-bold">RAIDE</span> — Radical AI Deployment Ecosystem.
+              Accelerating AI adoption across Finnish industry and public services.
             </p>
           </div>
 
           <div>
-            <h4 className="text-foreground/60 text-[10px] uppercase tracking-[0.3em] font-bold mb-6">
+            <h4 className="text-foreground text-xs uppercase tracking-[0.25em] font-bold mb-5">
               Navigate
             </h4>
             <ul className="space-y-3">
@@ -20,7 +22,7 @@ export default function Footer() {
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
-                    className="text-dim hover:text-foreground text-sm transition-colors duration-300"
+                    className="text-muted-foreground hover:text-accent text-sm font-semibold transition-colors"
                   >
                     {link}
                   </a>
@@ -30,27 +32,27 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-foreground/60 text-[10px] uppercase tracking-[0.3em] font-bold mb-6">
+            <h4 className="text-foreground text-xs uppercase tracking-[0.25em] font-bold mb-5">
               Get in Touch
             </h4>
-            <p className="text-dim text-sm leading-relaxed mb-5">
-              Interested in joining the ecosystem? Reach out to learn about 
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+              Interested in joining the ecosystem? Reach out to learn about
               membership and collaboration.
             </p>
             <a
               href="mailto:info@raide.fi"
-              className="text-gold hover:text-accent text-sm font-medium transition-colors duration-300"
+              className="text-accent hover:underline text-sm font-bold transition-colors"
             >
               info@raide.fi
             </a>
           </div>
         </div>
 
-        <div className="border-t border-border mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-dim/60 text-xs">
+        <div className="border-t border-border mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-muted-foreground text-xs font-medium">
             © {new Date().getFullYear()} RAIDE — Facilitated by Demola Global
           </p>
-          <p className="text-dim/60 text-xs">
+          <p className="text-muted-foreground text-xs font-medium">
             Supported by Business Finland
           </p>
         </div>

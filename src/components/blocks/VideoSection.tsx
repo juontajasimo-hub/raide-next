@@ -1,7 +1,5 @@
 "use client";
-"use client"
 
-import Image from "next/image"
 import { useScrollReveal } from "hooks/useScrollReveal"
 
 function PlayIcon() {
@@ -21,28 +19,19 @@ export default function VideoSection() {
 
       <div className="container mx-auto px-6">
         <div ref={ref} className="cin-scale-reveal">
-          {/* Video container */}
-          <div className="relative aspect-video max-w-5xl mx-auto overflow-hidden border border-border/50">
-            <Image
-              src="/pattern-dark.jpg"
-              alt=""
-              fill
-              className="object-cover opacity-60"
-            />
-            <div className="absolute inset-0 bg-background/40" />
-
-            {/* Play button */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
-              <div className="w-20 h-20 border-2 border-accent/60 rounded-full flex items-center justify-center cursor-pointer hover:border-accent hover:bg-accent/10 transition-all duration-300 active:scale-95 group">
-                <span className="text-gold ml-1 group-hover:scale-110 transition-transform duration-300">
-                  <PlayIcon />
-                </span>
-              </div>
+          <div className="relative aspect-video max-w-5xl mx-auto overflow-hidden rounded-3xl bg-gradient-to-br from-accent/15 via-secondary to-accent/5 border border-border/60">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-5">
+              <button
+                aria-label="Play the film"
+                className="w-20 h-20 bg-accent text-accent-foreground rounded-full flex items-center justify-center hover:bg-accent/90 hover:scale-105 transition-all duration-200 active:scale-95 shadow-lg"
+              >
+                <PlayIcon />
+              </button>
               <div className="text-center">
-                <p className="text-foreground/80 text-sm font-medium uppercase tracking-[0.2em]">
+                <p className="text-foreground text-sm font-bold uppercase tracking-[0.2em]">
                   Watch the Film
                 </p>
-                <p className="text-dim text-xs mt-1">Coming soon</p>
+                <p className="text-muted-foreground text-xs mt-1 font-semibold">Coming soon</p>
               </div>
             </div>
           </div>

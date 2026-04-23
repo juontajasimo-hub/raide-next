@@ -1,17 +1,16 @@
-import Image from "next/image";
 import RaideLogo from "components/blocks/RaideLogo";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image src="/raide-next/hero-cinematic.jpg" alt="" fill className="object-cover opacity-30" priority />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,hsl(var(--background))_75%)]" />
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background pt-24">
+      {/* Soft gradient backdrop */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-secondary/40" />
+        <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-accent/10 blur-3xl" />
+        <div className="absolute top-1/3 -right-32 w-[500px] h-[500px] rounded-full bg-accent/10 blur-3xl" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 flex flex-col items-center text-center pt-32 md:pt-40">
+      <div className="relative z-10 container mx-auto px-6 flex flex-col items-center text-center pt-20 md:pt-28">
         {/* Pre-title */}
         <p
           className="text-gold/70 text-xs uppercase tracking-[0.35em] mb-6 opacity-0 animate-fade-up font-medium"
@@ -77,8 +76,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 }
